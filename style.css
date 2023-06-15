@@ -14,7 +14,7 @@ body {
 }
 
 .tooltip .tooltiptext {
-    width: 550px;
+    max-width: 520px; /* Set a maximum width to limit the tooltip size */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -22,7 +22,7 @@ body {
     background-color: #333;
     color: #fff;
     border-radius: 6px;
-    padding: 5px;
+    padding: 10px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -32,6 +32,14 @@ body {
     transition: opacity 0.8s;
 }
 
+@media (max-width: 500px) {
+    .tooltip .tooltiptext {
+        width: 200px;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+    }
+}
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
