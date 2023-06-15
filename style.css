@@ -32,6 +32,23 @@ body {
     transition: opacity 0.8s;
 }
 
+@keyframes dot-animation {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.dot-animation {
+    animation: dot-animation 3s infinite;
+}
+
+
 @media (max-width: 500px) {
     .tooltip .tooltiptext {
         width: 200px;
