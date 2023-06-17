@@ -13,6 +13,12 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
